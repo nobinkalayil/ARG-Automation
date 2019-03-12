@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26195382900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Filter by Price range",
+        "description": "",
+        "id": "review;filter-by-price-range",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 512596000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on homepage",
+            "match": {
+              "location": "SearchSteps.i_am_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10121404400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for a product \"nike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nike",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchSteps.i_search_for_a_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38146318300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I apply filter \"£10 - £15\" on search result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "£10 - £15",
+                  "offset": 16
+                }
+              ],
+              "location": "ReviewSteps.i_apply_filter_on_search_result(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 685751400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see all products \"range\" are filtered \"10-15\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "range",
+                  "offset": 27
+                },
+                {
+                  "val": "10-15",
+                  "offset": 48
+                }
+              ],
+              "location": "ReviewSteps.iShouldSeeAllProductsAreFiltered(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@reg"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20338049700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Filter By Rating",
+        "description": "",
+        "id": "review;filter-by-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50510000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on homepage",
+            "match": {
+              "location": "SearchSteps.i_am_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9190286700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I search for a product \"nike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nike",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchSteps.i_search_for_a_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39447885700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I apply filter \"4or more\" on search result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4or more",
+                  "offset": 16
+                }
+              ],
+              "location": "ReviewSteps.i_apply_filter_on_search_result(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 644445900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see all products \"review\" are filtered \"4.0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "review",
+                  "offset": 27
+                },
+                {
+                  "val": "4.0",
+                  "offset": 49
+                }
+              ],
+              "location": "ReviewSteps.iShouldSeeAllProductsAreFiltered(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "Review",
+    "description": "As an end user\r\nI want to select products according to specific price range\r\nSo that i can buy a product according to my preference",
+    "id": "review",
+    "keyword": "Feature",
+    "uri": "reviewproducts.feature"
+  }
+]
