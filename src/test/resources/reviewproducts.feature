@@ -15,8 +15,8 @@ Feature: Review
 
     Examples:
       |filter rating| expected value|
-      |£10 -£15    | 10-15          |
-      |£15 -£20    | 15-20          |
+      |£10 - £15    | 10 - 15          |
+      |£15 - £20    | 15 - 20          |
 
 
 

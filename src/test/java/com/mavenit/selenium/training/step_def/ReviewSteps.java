@@ -46,7 +46,7 @@ public class ReviewSteps {
 
             List<Double> actual = resultPage.getAllProductsPrices();
             System.out.println(actual);
-            List<String> rangeList = Arrays.asList(filterValue.split("-"));
+            List<String> rangeList = Arrays.asList(filterValue.split(" - "));
 
             System.out.println(rangeList);
             Double min = Double.parseDouble(rangeList.get(0));

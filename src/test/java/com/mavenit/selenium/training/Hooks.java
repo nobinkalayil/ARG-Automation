@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class Hooks {
     private DriverManager drivermanager = new DriverManager();
+   // private String url = System.getProperty("url");
 
 
     @Before

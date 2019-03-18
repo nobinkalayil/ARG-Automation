@@ -82,7 +82,7 @@ public class ResultPage extends DriverManager {
             }
 
         }
-         5waitUntilElementInvisible(By.cssSelector(".icon--loading"));
+         waitUntilElementInvisible(By.cssSelector(".icon--loading"));
     }
 
 
