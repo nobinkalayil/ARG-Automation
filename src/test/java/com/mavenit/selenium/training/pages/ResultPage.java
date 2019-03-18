@@ -82,7 +82,7 @@ public class ResultPage extends DriverManager {
             }
 
         }
-        waitUntilElementInvisible(By.cssSelector(".icon--loading"));
+         5waitUntilElementInvisible(By.cssSelector(".icon--loading"));
     }
 
 
@@ -94,7 +94,7 @@ public class ResultPage extends DriverManager {
 
         for (WebElement filterWebelements : priceOnproduct) {
 
-            Double indivprice = Double.parseDouble(filterWebelements.getText().replace("£", ""));
+            double indivprice = Double.parseDouble(filterWebelements.getText().replace("£", ""));
             System.out.println(indivprice);
             collectedPricelist.add(indivprice);
         }
